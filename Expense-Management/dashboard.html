@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Welcome <span id="userName"></span> (<span id="userRole"></span>)</h2>
+    <h3>Company: <span id="companyName"></span> | Currency: <span id="companyCurrency"></span></h3>
+    <button style="background-color: red;" onclick="logout()">Logout</button>
+
+    <div id="adminPanel" class="container"></div>
+    <div id="managerPanel" class="container"></div>
+    <div id="employeePanel" class="container"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("36PO5AbbB8BdtwEq0");
+        })();
+    </script>
+
+</body>
+
+</html>
