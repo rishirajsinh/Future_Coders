@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 600px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  animation: slideUp 0.6s ease-in-out;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 95%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0,119,255,0.4);
+  outline: none;
+}
+
+button {
+  margin: 8px 4px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #0056cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+b {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.85em;
+}
+
+b:contains("Pending") {
+  background: #ff9800;
+  color: white;
+}
+
+b:contains("Approved") {
+  background: #4caf50;
+  color: white;
+}
+
+b:contains("Rejected") {
+  background: #f44336;
+  color: white;
+}
+
+b:contains("Force Approved") {
+  background: #2196f3;
+  color: white;
+}
+
+b:contains("Force Rejected") {
+  background: #607d8b;
+  color: white;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  animation: fadeIn 1s ease;
+}
+.extrabtn{
+  margin-left: 160px;
+}
