@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Expense Management</h2>
+
+    <div id="signup-box">
+      <h3>Signup (First signup → Admin + Company)</h3>
+      <input type="text" id="signupName" placeholder="Name">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPass" placeholder="Password">
+      <select id="signupCountry">
+        <option value="INR">India (INR)</option>
+        <option value="USD">USA (USD)</option>
+        <option value="EUR">Europe (EUR)</option>
+      </select>
+      <button class="extrabtn" onclick="signup()">Signup</button>
+    </div>
+
+    <hr>
+
+    <div id="login-box">
+      <h3>Login</h3>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPass" placeholder="Password">
+      <button class="extrabtn" onclick="login()">Log -in</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+     emailjs.init("36PO5AbbB8BdtwEq0"); 
+  })();
+</script>
+
+
+
+</body>
+</html>
